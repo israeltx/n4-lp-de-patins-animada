@@ -36,7 +36,6 @@ section.hero {
 
   & h1 span {
     display: block;
-
     animation: slideUp 5s 2s infinite ease;
   }
 
@@ -218,5 +217,35 @@ section.hero {
 
   100% {
     transform: translateY(-15rem);
+  }
+}
+
+@media (width <= 360px) {
+  section.hero {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    max-width: 22.5rem;
+    padding: 1rem 1.5rem 3rem 1.5rem; 
+
+    /* border: 1px solid yellow; */
+
+    & h1 div {
+      /* border: 1px solid yellow; */
+      height: 2.53rem;
+    }
+
+    /* Content with all the animation elements */
+    & > div:nth-child(2) {
+      height: 21.5rem;
+    }
+
+    /* & .content {
+      max-height: 312px;
+    } */
+
+    /* Buttons */
+    & .buttons {
+      flex-direction: column-reverse;
+    }
   }
 }
