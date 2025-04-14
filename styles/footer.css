@@ -93,6 +93,29 @@ footer {
         transition: scale 200ms;
       }
     }
+  }
+}
 
+@media (width <= 360px) {
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3rem 1.5rem 1.5rem;
+
+    & .logo {
+      margin-bottom: 3rem;
+    }
+
+    & nav {
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    & .social-links {
+      & a {
+        justify-content: flex-start;
+      }
+    }
   }
 }
