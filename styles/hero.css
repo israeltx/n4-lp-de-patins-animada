@@ -227,10 +227,7 @@ section.hero {
     max-width: 22.5rem;
     padding: 1rem 1.5rem 3rem 1.5rem; 
 
-    /* border: 1px solid yellow; */
-
     & h1 div {
-      /* border: 1px solid yellow; */
       height: 2.53rem;
     }
 
@@ -238,10 +235,6 @@ section.hero {
     & > div:nth-child(2) {
       height: 21.5rem;
     }
-
-    /* & .content {
-      max-height: 312px;
-    } */
 
     /* Buttons */
     & .buttons {

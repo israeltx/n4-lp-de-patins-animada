@@ -109,3 +109,19 @@ section.gallery {
     transform: translateY(100%);
   }
 }
+
+@media (width <= 360px) {
+  section.gallery {
+    & .content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    & figure {
+      & img {
+        height: 15rem;
+      }
+    }
+  }
+}
